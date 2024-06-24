@@ -44,7 +44,7 @@ import "github.com/MikolajKorbanek/go-assert"
 
 func main() {
     x := 5
-    goassert.Assert(x > 0, "x should be greater than 0")
+    assert.Assert(x > 0, "x should be greater than 0")
 }
 ```
 
@@ -57,7 +57,7 @@ import "github.com/MikolajKorbanek/go-assert"
 
 func main() {
     y := "hello"
-    goassert.AssertEqual("hello", y, "y should be 'hello'")
+    assert.AssertEqual("hello", y, "y should be 'hello'")
 }
 ```
 
@@ -70,7 +70,7 @@ import "github.com/MikolajKorbanek/go-assert"
 
 func main() {
     z := 10
-    goassert.AssertNotEqual(5, z, "z should not be 5")
+    assert.AssertNotEqual(5, z, "z should not be 5")
 }
 ```
 
@@ -83,7 +83,7 @@ import "github.com/MikolajKorbanek/go-assert"
 
 func main() {
     var ptr *int
-    goassert.AssertNil(ptr, "ptr should be nil")
+    assert.AssertNil(ptr, "ptr should be nil")
 }
 ```
 
@@ -96,7 +96,7 @@ import "github.com/MikolajKorbanek/go-assert"
 
 func main() {
     ptr := new(int)
-    goassert.AssertNotNil(ptr, "ptr should not be nil")
+    assert.AssertNotNil(ptr, "ptr should not be nil")
 }
 ```
 
@@ -109,7 +109,7 @@ import "github.com/MikolajKorbanek/go-assert"
 
 func main() {
     flag := false
-    goassert.AssertFalse(flag, "flag should be false")
+    assert.AssertFalse(flag, "flag should be false")
 }
 ```
 
